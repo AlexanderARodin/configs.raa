@@ -1,7 +1,7 @@
-export PATH=~/.cargo/bin:$PATH
+export PATH="~/.cargo/bin:$PATH"
 
-PROMPT="%(!.%B%F{red}.%F{green})╭─%n@%m:%~%(1/./.)
-╰─%(!.#%f%b.>%f) "
+PROMPT="%(!.%B%F{red}.%F{green})╭─%n@%m:%F{cyan}%~%(1/./.)%f
+%(!.%B%F{red}.%F{green})╰─%(!.#%f%b.>%f) "
 
 RPROMPT='%(?.%F{green}[ok].%F{red}[E:%?])%f%(1j.%F{yellow}[%j]%f.) '
 
@@ -10,7 +10,6 @@ HISTSIZE=1000
 SAVEHIST=1000
 setopt APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
-
 
 # vim navigation
 bindkey -v
@@ -48,5 +47,4 @@ zle -N zle-keymap-select
 
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
-
 
