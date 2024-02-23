@@ -17,7 +17,7 @@ bindkey -v
 autoload -U compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
-compinit
+compinit -u # withou -u doesn't work on OSX properly but unsecure
 _comp_options+=(globdots)		# Include hidden files.
 
 # bind vim keys for completion menu:
