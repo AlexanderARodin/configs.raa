@@ -1,4 +1,4 @@
 ### create Zsh config
 ```shell
-ln -s ~/.config/config.raa/zsh/zshrc ~/.zshrc
+ln -s ~/.config/configs.raa/zsh/zshrc ~/.zshrc
 ```
